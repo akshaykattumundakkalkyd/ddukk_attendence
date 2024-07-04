@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        initialRoute: '/admRegister',
+        initialRoute: '/userLogin',
         routes: {
           '/admLogin': (context) => TeacherLogin(),
           '/userLogin': (context) => UserLogin(),
