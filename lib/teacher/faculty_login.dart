@@ -2,18 +2,16 @@ import 'package:ddukk_attendence/basic_widgets/button.dart';
 import 'package:ddukk_attendence/basic_widgets/textfield.dart';
 import 'package:ddukk_attendence/constants/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
-class UserLogin extends StatefulWidget {
-  const UserLogin({super.key});
+class FacultyLogin extends StatefulWidget {
+  const FacultyLogin({super.key});
 
   @override
-  State<UserLogin> createState() => _UserLoginState();
+  State<FacultyLogin> createState() => _FacultyLoginState();
 }
 
-class _UserLoginState extends State<UserLogin> {
+class _FacultyLoginState extends State<FacultyLogin> {
   final _formKey = GlobalKey<FormState>();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,17 +23,12 @@ class _UserLoginState extends State<UserLogin> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                GestureDetector(
-                  onDoubleTap: () {
-                    Navigator.pushNamed(context, '/facultyLogin');
-                  },
-                  child: Text(
-                    'Student Login',
-                    style: TextStyle(
-                      fontSize: 24,
-                      color: black,
-                      fontWeight: FontWeight.bold,
-                    ),
+                Text(
+                  'Faculty Login',
+                  style: TextStyle(
+                    fontSize: 24,
+                    color: black,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
                 SizedBox(height: 25),

@@ -9,7 +9,7 @@ class CustomTextField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextField(
+    return TextFormField(
       style: TextStyle(color: primaryColor),
       decoration: InputDecoration(
         labelText: labelText,

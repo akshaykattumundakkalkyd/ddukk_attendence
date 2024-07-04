@@ -1,4 +1,4 @@
-import 'package:ddukk_attendence/teacher/teacher_login.dart';
+import 'package:ddukk_attendence/teacher/faculty_login.dart';
 import 'package:ddukk_attendence/user/user_login.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         initialRoute: '/userLogin',
         routes: {
-          '/admLogin': (context) => TeacherLogin(),
+          '/facultyLogin': (context) => FacultyLogin(),
           '/userLogin': (context) => UserLogin(),
         });
   }
