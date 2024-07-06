@@ -1,3 +1,4 @@
+import 'package:ddukk_attendence/constants/colors.dart';
 import 'package:ddukk_attendence/office/add_faculty.dart';
 import 'package:ddukk_attendence/office/add_students.dart';
 import 'package:ddukk_attendence/teacher/faculty_login.dart';
@@ -14,13 +15,22 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        initialRoute: '/addStudent',
-        routes: {
-          '/facultyLogin': (context) => FacultyLogin(),
-          '/userLogin': (context) => UserLogin(),
-          '/addFaculty': (context) => AddFaculty(),
-          '/addStudent': (context) => AddStudents(),
-        });
+      debugShowCheckedModeBanner: false,
+      initialRoute: '/addStudent',
+      routes: {
+        '/facultyLogin': (context) => FacultyLogin(),
+        '/userLogin': (context) => UserLogin(),
+        '/addFaculty': (context) => AddFaculty(),
+        '/addStudent': (context) => AddStudents(),
+      },
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: black),
+        useMaterial3: true,
+        scaffoldBackgroundColor: primaryColor,
+        appBarTheme: AppBarTheme(backgroundColor: Colors.white),
+        primarySwatch: Colors.blue,
+        brightness: Brightness.light,
+      ),
+    );
   }
 }
